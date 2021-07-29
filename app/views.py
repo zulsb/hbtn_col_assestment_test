@@ -58,7 +58,9 @@ def search(request):
 
 
 def users(request):
-    return HttpResponse("Users")
+    return render(request, "users.html", {
+        'title': 'Users'
+    })
 
 
 def orders(request):
