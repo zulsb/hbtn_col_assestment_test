@@ -48,7 +48,7 @@ header {
 .alert {
   padding: 20px;
   background: seagreen;
-  color: white;
+  color:#FFF;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -56,4 +56,27 @@ header {
 
 .alert-warning {
   background: purple;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button a {
+  border: 2px solid #673ab7;
+  border-radius: 48px;
+}
+
+.button a:hover {
+  border: 2px solid #673ab7d4;
+  border-radius: 48px;
+  background: #673ab773;
+  color: #ffffff9e;
+}
+
+.form-style {
+  display: grid;
+  width: 30%;
 }

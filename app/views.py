@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from app.forms import RegisterForm
@@ -64,7 +64,9 @@ def users(request):
 
 
 def orders(request):
-    return HttpResponse("orders")
+    return render(request, "orders.html", {
+        'title': 'Orders'
+    })
 
 def logout_user(request):
     logout(request)
