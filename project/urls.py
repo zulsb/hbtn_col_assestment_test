@@ -24,5 +24,6 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('search/', views.search, name="search"),
     path('users/', views.users, name="users"),
-    path('orders/', views.orders, name="orders")
+    path('orders/', views.orders, name="orders"),
+    path('logout/', views.logout_user, name="logout")
 ]

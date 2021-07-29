@@ -3,19 +3,19 @@
 {% block title %} {{title}} {% endblock %}
 
 {% block content %}
-    <h1>{{title}}</h1>
+<h1>{{title}}</h1>
 
-    {{register_form.errors}}
+{{register_form.errors}}
 
-    <form method="post" action="">
-        {% csrf_token %}
-    
-        {% for field in register_form %}
-            <label>{{field.label}}</label>
-            {{field}}
-        {% endfor %}
-        <input type="submit" value="Register" />
-    
-    </form>
+<form method="post" action="">
+  {% csrf_token %}
+
+  {% for field in register_form %}
+  <label>{{field.label}}</label>
+  {{field}}
+  {% endfor %}
+  <input type="submit" value="Register" />
+
+</form>
 
 {% endblock %}

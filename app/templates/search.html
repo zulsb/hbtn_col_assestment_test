@@ -3,14 +3,43 @@
 {% block title %} {{title}} {% endblock %}
 
 {% block content %}
-{% if messages %}
+  {% if messages %}
     {% for message in messages %}
-        <div class="alert alert-success">
-            {{message}}
-        </div>
+    <div class="alert alert-success">
+      {{message}}
+    </div>
     {% endfor %}
-{% endif %}
-<h1>{{title}}</h1>
+  {% endif %}
 
+  <div>
+    <h3 class="title_h2">Welcome, {{ request.user.username }}</h3>
+    <div>
+      <h1>ORDER(S) INFORMATION</h1>
+      <div>
+        <table >
+          <thead>
+            <tr>
+              <td>DATE</td>
+              <td>TOTAL</td>
+              <td>SUBTOTAL</td>
+              <td>TAXES</td>
+              <td>PAID</td>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>stfdtgdfg</td>
+              <td>gfdgdgd</td>
+              <td>gfdgdgd</td>
+              <td>gfdgdgd</td>
+              <td>gfdgdgdgdg</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 
 {% endblock %}

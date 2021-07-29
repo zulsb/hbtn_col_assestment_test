@@ -1,53 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	border: none;
-	outline: none;
-	font-family: 'Poppins', sans-serif;
-	text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #FFF;
 }
 
 body {
-	height: 100vh;
-	width: 100%;
-	background: linear-gradient(to bottom, #14A4E8, #5a01d0);
+  height: 100vh;
+  width: 100%;
+  background:#5a01d0;
 }
 
 header {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
 }
 
 .nav-bar ul {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	padding: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .nav-bar ul li {
-	float: left;
+  float: left;
 }
 
 .nav-bar ul li a {
-	display: block;
-	padding: 1rem 3rem;
+  display: block;
+  padding: 1rem 3rem;
+}
+
+.title_h2 {
+  display: block;
 }
 
 .message,
 .alert-success,
 .alert {
-	padding: 20px;
-	background: seagreen;
-	color: white;
-	text-align: center;
-	margin-bottom: 10px;
+  padding: 20px;
+  background: seagreen;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 
 .alert-warning {
-	background: purple;
+  background: purple;
 }
