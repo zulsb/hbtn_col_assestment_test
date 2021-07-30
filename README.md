@@ -1,4 +1,4 @@
-## Test Challenge - Retail Ordes App
+## Test Challenge - Retail Orders App
 
 ## Contents
 
