@@ -29,6 +29,13 @@ Run Django
 
 ```
 
+## Login
+```bash
+- Username: Luz
+- Password: luz123
+
+```
+
 
 ## Repository contents
 Test Challenge - Project files:
