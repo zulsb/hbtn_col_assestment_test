@@ -13,9 +13,9 @@
   
     {% for field in register_form %}
     <label>{{field.label}}</label>
-    {{field}}
+    <input class="input-form">{{field.input}}</input>
     {% endfor %}
-    <input type="submit" value="Register" />
+    <input class="button-form" type="submit" value="Create user" />
   
   </form>
 {% endblock %}

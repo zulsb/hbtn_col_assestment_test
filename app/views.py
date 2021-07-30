@@ -21,7 +21,7 @@ def register(request):
                 return redirect('search')
 
         return render(request, "register.html", {
-            'title': 'Register',
+            'title': 'Registration form',
             'register_form': register_form
         })
 
@@ -43,7 +43,7 @@ def login_page(request):
                 messages.warning(request, 'Failed registration :(')
 
         return render(request, "login.html", {
-            'title': 'Login'
+            'title': 'Login form'
         })
 
 

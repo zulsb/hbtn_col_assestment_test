@@ -6,21 +6,21 @@
 <h3>{{title}}</h3>
 
 {% if messages %}
-{% for message in messages %}
-<div class="alert alert-warning">
-  {{message}}
-</div>
-{% endfor %}
+  {% for message in messages %}
+    <div class="alert alert-warning">
+      {{message}}
+    </div>
+  {% endfor %}
 {% endif %}
 
 <form method="post" action="" class="form-style">
   {% csrf_token %}
 
   <label for="username">Username:</label>
-  <input type="text" name="username" />
+  <input class="input-form" type="text" name="username" />
   <label for="password">Password:</label>
-  <input type="password" name="password" />
-  <input type="submit" value="Login" />
+  <input class="input-form" type="password" name="password" />
+  <input class="button-form" type="submit" value="Login" />
 
 </form>
 {% endblock %}
