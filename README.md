@@ -21,8 +21,9 @@ App that handles the process of creating an order for a retailer company with us
 
 ```bash
 - git clone https://github.com/zulsb/hbtn_col_assestment_test.git
-- npm install
-- npm run start
+
+Install Django
+- pip3 install Django==3.0.5
 
 Run Django
 - python manage.py runserver
